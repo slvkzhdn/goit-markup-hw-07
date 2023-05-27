@@ -259,6 +259,7 @@ button {
     margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 
@@ -292,6 +293,46 @@ button {
 .hero-btn:focus {
     background-color: #404BBF;
 }
+
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+
+    .hero-section {
+    /* width: 428px;
+    height: 432px; */
+    }
+
+    .hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    }
+
+}
+
+    /* STYLES FOR TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .hero-title {
+    min-width: 320px;
+    min-height: 80px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    }
+  }
+
+  /* STYLES FOR DESKTOP */
+@media screen and (min-width: 1158px) {
+
+  }
+
+
 
 /**
   |============================
@@ -528,13 +569,8 @@ button {
     .team-list-item {
       width: calc((100% - 72px) / 4);
     }
-    /* img {
-        width: 100%;
-    } */
-  }
 
-  
-  
+  }
 
 .team-title {
     font-size: 36px;
@@ -641,13 +677,20 @@ button {
 }
 
 /* Styles for mobile */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .features-section {
+        margin-bottom: 96px;
+    }
+
     .customers-list {
+    min-width: 320px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 24px;
+    column-gap: 16px;
     row-gap: 72px;
+
     }
 
     .customers-list-item {
@@ -655,20 +698,41 @@ button {
     height: 88px;
     
     }
+
+    .customers-link {
+    width: 190px;
+    height: 88px;
+    }
 }
 
 
     /* STYLES FOR TABLETS */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-    .customers-list-item {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+   
+    .features-section {
+        margin-bottom: 96px;
+    }
+
+    .customers-list {
+        min-width: 320px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        column-gap: 24px;
+        row-gap: 72px;
+    
+        }
+    
+        .customers-list-item {
         width: 168px;
         height: 88px;
-        column-gap: 16px;
-        row-gap: 72px;
-    }
+        
+        }
+    
+        .customers-link {
+        width: 168px;
+        height: 88px;
+        }
 
   }
 
