@@ -412,6 +412,13 @@ button {
   }
 
   /* STYLES FOR DESKTOP */
+  @media screen and (min-width: 1158px) {
+    .features-section {
+        margin-bottom: 120px;
+     
+  }
+}
+
 
 
 /**
@@ -455,9 +462,10 @@ button {
 
   /* STYLES FOR DESKTOP */
 @media screen and (min-width: 1158px) {
-    .employment-section {
+    /* .features-section {
+        margin-bottom: 120px;
      
-  }
+  } */
 }
 
 /**
@@ -630,6 +638,43 @@ button {
     fill: currentColor;
     width: 104px;
     height: 56px;
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+    .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+    }
+
+    .customers-list-item {
+    width: 190px;
+    height: 88px;
+    
+    }
+}
+
+
+    /* STYLES FOR TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .customers-list-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 168px;
+        height: 88px;
+        column-gap: 16px;
+        row-gap: 72px;
+    }
+
+  }
+
+  /* STYLES FOR DESKTOP */
+@media screen and (min-width: 1158px) {
+    
 }
 
 /**
