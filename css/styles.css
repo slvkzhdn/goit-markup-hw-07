@@ -107,7 +107,7 @@ button {
 
 
 
-.features-list {
+/* .features-list {
     margin-bottom: 8px;
 }
 
@@ -128,7 +128,7 @@ button {
 .features-icon {
     width: 64px;
     height: 64px;
-}
+} */
 
 .header-nav {
     display: flex;
@@ -298,6 +298,28 @@ button {
   | FEATURES SECTION
   |============================
 */
+.features-list {
+    margin-bottom: 8px;
+}
+
+.features-list-main {
+    width: calc((100% - 72px) / 4);
+}
+
+.features-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.features-icon {
+    width: 64px;
+    height: 64px;
+}
 
 .features-list {
     font-weight: 500;
@@ -314,6 +336,83 @@ button {
     color: #434455;
 
 }
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+    .features-item {
+        display: none;
+     
+    }
+
+    .list-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        
+    }
+
+    .features-list-main {
+        width: 396px;
+    }
+
+    .features-list {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
+
+    }
+    .features-list-item {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+}
+
+    /* STYLES FOR TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .features-item {
+        display: none;
+    }
+
+    .list-features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .features-list-main {
+        width: 356px;
+    }
+
+    .features-list {
+        text-align: left;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: capitalize;
+
+    }
+    
+    .features-list-item {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+  }
+
+  /* STYLES FOR DESKTOP */
+
 
 /**
   |============================
@@ -337,6 +436,28 @@ button {
 
 .employment-img {
     width: calc((100% - 48px) / 3);
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+    .employment-section {
+        display: none;
+     
+    }
+}
+
+    /* STYLES FOR TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .employment-section {
+        display: none;
+    }
+  }
+
+  /* STYLES FOR DESKTOP */
+@media screen and (min-width: 1158px) {
+    .employment-section {
+     
+  }
 }
 
 /**
@@ -385,7 +506,7 @@ button {
     }
   }
 
-  /* STYLES FOR DESCTOP */
+  /* STYLES FOR DESKTOP */
 @media screen and (min-width: 1158px) {
     .team-section {
       padding: 120px 0;
@@ -393,10 +514,15 @@ button {
     .team-list {
       display: flex;
       gap: 24px;
+      list-style: none;
+      padding: 0;
     }
     .team-list-item {
       width: calc((100% - 72px) / 4);
     }
+    /* img {
+        width: 100%;
+    } */
   }
 
   
