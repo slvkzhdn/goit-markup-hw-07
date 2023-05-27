@@ -2,7 +2,12 @@
     --accent-color: #4d5ae5;
     --brand-color: #2e2f42;
 }
-/* BODY */
+
+/**
+  |============================
+  | BODY
+  |============================
+*/
 
 body {
     font-family: "Roboto", sans-serif;
@@ -63,11 +68,34 @@ button {
 }
 
 .container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-}
+        /* Basic styles */
+        min-width: 320px;
+        max-width: 428px;
+        padding: 0 16px;
+        margin: 0 auto;
+    
+        outline: 2px solid red;
+        outline-offset: -2px;
+    
+    }
+    
+    /* Tablet screen >=768 */
+    
+    @media only screen and (min-width: 768px) {
+      .container {
+        max-width: 768px;
+      }
+    }
+    
+    /* Desktop screen >=1158 */
+    
+    @media only screen and (min-width: 1158px) {
+      .container {
+        max-width: 1158px;
+        padding: 0 15px;
+        
+      }
+    }
 
 .list {
     list-style: none;
@@ -76,6 +104,8 @@ button {
     display: flex;
     gap: 24px;
 }
+
+
 
 .features-list {
     margin-bottom: 8px;
@@ -145,9 +175,10 @@ button {
     color: #404bbf;
 }
 
-section {
-    padding: 120px 0;
+.team-section {
+    padding: 96px 0;
 }
+
 
 .link {
     text-decoration: none;
@@ -198,7 +229,11 @@ section {
     color: #404bbf;
 }
 
-/* HERO */
+/**
+  |============================
+  | HERO SECTION 
+  |============================
+*/
 
 .hero-section {
     background-color: #2e2f42;
@@ -258,7 +293,11 @@ section {
     background-color: #404BBF;
 }
 
-/* FEATURES SECTION */
+/**
+  |============================
+  | FEATURES SECTION
+  |============================
+*/
 
 .features-list {
     font-weight: 500;
@@ -276,7 +315,11 @@ section {
 
 }
 
-/* EMPLOYMENT SECTION */
+/**
+  |============================
+  | EMPLOYMENT SECTION
+  |============================
+*/
 
 .employment-section {
     padding-top: 0px;
@@ -296,12 +339,68 @@ section {
     width: calc((100% - 48px) / 3);
 }
 
-/* TEAM SECTION */
+/**
+  |============================
+  | TEAM SECTION 
+  |============================
+*/
 
 .team-section {
     background-color: #F4F4FD;
 
 }
+
+/* Styles for mobile */
+@media screen and (max-width: 767px) {
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 72px;
+      padding-right: 40px;
+      list-style: none;
+    }
+
+    .team-list-item {
+      max-width: 264px;
+    }
+}
+
+    /* STYLES FOR TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 64px;
+      column-gap: 24px;
+      padding-right: 40px;
+      list-style: none;
+      
+    }
+    .team-list-item {
+      max-width: 264px;
+      width: calc((100% - 24px) / 2);
+      margin: 0;
+    }
+  }
+
+  /* STYLES FOR DESCTOP */
+@media screen and (min-width: 1158px) {
+    .team-section {
+      padding: 120px 0;
+    }
+    .team-list {
+      display: flex;
+      gap: 24px;
+    }
+    .team-list-item {
+      width: calc((100% - 72px) / 4);
+    }
+  }
+
+  
+  
 
 .team-title {
     font-size: 36px;
@@ -346,7 +445,11 @@ section {
 }
 
 
-/* CUSTOMERS */
+/**
+  |============================
+  | CUSTOMERS SECTION 
+  |============================
+*/
 
 .customers-section {
     padding-top: 120px;
@@ -403,7 +506,11 @@ section {
     height: 56px;
 }
 
-/* FOOTER */
+/**
+  |============================
+  | FOOTER 
+  |============================
+*/
 
 
 
@@ -453,10 +560,18 @@ height: 72px;
 }
 
 
-/* PORTFOLIO */
+    /**
+    |============================
+    | PORTFOLIO
+    |============================
+    */
 
 
-/* MAIN */
+/**
+  |============================
+  | MAIN 
+  |============================
+*/
 
 .filters-btn {
     font-family: "Roboto", sans-serif;
@@ -544,7 +659,11 @@ height: 72px;
     transform: translateY(0%);
 }
 
-/* FOOTER */
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
 
 .portfolio-footer {
     background-color: #2e2f42;
@@ -587,7 +706,11 @@ height: 72px;
     background-color: #31d0aa;
 }
 
-/* Socials item */
+/**
+  |============================
+  | SOCIALS ITEM 
+  |============================
+*/
 
 .socials {
     display: flex;
@@ -664,7 +787,11 @@ svg {
 
 }
 
-/* MODAL */
+/**
+  |============================
+  | MODAL 
+  |============================
+*/
 
 .backdrop {
     position: fixed;
@@ -835,7 +962,8 @@ svg {
   /**
   |============================
   | MODAL FORM
-  |============================*/
+  |============================
+  */
 
     .modal-form-title {
     display: block;
