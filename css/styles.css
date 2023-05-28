@@ -149,9 +149,6 @@ button {
         display: none;
     }
 
-    .header-container {
-        
-    }
 
     .header-logo {
         margin 0 auto;
@@ -164,11 +161,6 @@ button {
     .burger {
         fill: currentColor;
     }
-
-    .mobile-socials {
-        
-    }
-
 
 }
 
@@ -372,9 +364,7 @@ button {
 
   /* STYLES FOR DESKTOP */
 @media screen and (min-width: 1158px) {
-    .hero-section {
-
-    }
+    
   }
 
 
