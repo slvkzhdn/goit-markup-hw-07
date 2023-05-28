@@ -484,13 +484,9 @@ button {
   @media screen and (min-width: 1158px) {
     .features-section {
         margin-bottom: 120px;
-     
-  }
-
-  .features-section {
-    padding-top: 120px;
-  }
+        padding-top: 120px;
 }
+  }
 
 
 
@@ -796,13 +792,23 @@ button {
 
 @media screen and (max-width: 767px) {
 
-    .features-section {
-        padding-top: 96px;
+    .container-footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-content {
+        margin-bottom: 72px;
     }
     
-    .container-footer {
-        display: block;
+    .social-footer {
+        margin-bottom: 72px;
     }
+
+    .footer-socials-p {
+        text-align: center;
+    }
+
     
   }
 
