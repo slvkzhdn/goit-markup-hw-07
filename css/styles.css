@@ -44,12 +44,13 @@ body {
     align-items: center;
 } */
 
-.header-container {
+/* .header-container {
     display: flex;
     align-items: center;
     width: 1440px;
     height: 72px;
-}
+} */
+
 
 
 .span-header {
@@ -144,13 +145,11 @@ button {
 @media only screen and (max-width: 767px) {
 
     .header-container {
-        margin: 0;
-        min-width: 320px;
-        height: 70px;
-        
+        display: flex;
+        align-items: center;
+        /* width: 428px;
+        height: 70px; */
     }
-
-    
 
     .adress {
         display: none;
@@ -169,7 +168,7 @@ button {
         margin: 0;
         width: 115px;
         height: 24px;
-        margin-right: ;
+        margin-right: auto;
     }
 
     .burger {
@@ -180,7 +179,14 @@ button {
 
 /* STYLES FOR TABLET */
 
-@media only screen and (max-width: 1157px) {
+@media only screen and (min-width: 768px) {
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        width: 1440px;
+        height: 72px;
+    }
 
     
 }
@@ -188,6 +194,14 @@ button {
 /* STYLES FOR DESKTOP */
 
 @media only screen and (min-width: 1158px) {
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        width: 1440px;
+        height: 72px;
+    }
+    
     .header-nav-list {
         align-items: center;
         display: flex;
@@ -261,9 +275,9 @@ button {
 }
 
 
-.adress {
+/* .adress {
     font-style: normal;
-}
+} */
 
 .adress-list {
     display: flex;
@@ -311,7 +325,7 @@ button {
     background-size: cover;
 }
 
-.hero-title {
+/* .hero-title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -323,7 +337,7 @@ button {
     margin-left: auto;
     margin-right: auto;
 
-}
+} */
 
 
 .hero-btn {
@@ -361,6 +375,7 @@ button {
 /* Styles for mobile */
 @media screen and (max-width: 767px) {
 
+
     .hero-section {
         height: 432px;
         padding: 112px 0;
@@ -375,8 +390,9 @@ button {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #FFFFFF;
-        min-width: 320px;
+        /* min-width: 320px; */
         height: 80px;
+        margin: 0;
         margin-bottom: 72px;
     }
 
@@ -391,13 +407,91 @@ button {
 
     .hero-section {
         height: 436px;
+        padding: 112px 0;
+    }
+
+    .hero-title {
+        margin-left: 112px;
+        margin-right: 112px;
+        margin-bottom: 36px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        text-transform: capitalize;
+    }
+
+    .hero-btn {
+        margin: 0 auto;
     }
     
+    .header-logo {
+        margin-right: 120px;
+    }
+
+    .header-nav-list {
+        gap: 40px;
+    }
+
+    .adress {
+        font-style: normal;
+        margin-left: auto;
+    }
+
+    .adress-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* .adress-list {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: #434455;
+    } */
+
+    .adress-mail {
+        padding: 0;
+        margin-right: 0;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .adress-mail-txt {
+        margin-right: 0;
+    }
+
   }
 
   /* STYLES FOR DESKTOP */
 @media screen and (min-width: 1158px) {
     
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        max-width: 496px;
+        height: 120px;
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;;
+    }
+
+    .adress {
+        font-style: normal;
+    }
+
+
   }
 
 
@@ -1316,17 +1410,27 @@ svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 427px) {
    .modal {
-    min-width: 320px;
+    width: 300px;
    }
 }
 
 @media only screen and (min-width: 768px) {
+
+    .modal {
+        width: 408px;
+        height: 586px;
+    }
    
 }
 
 @media only screen and (min-width: 1158px) {
+
+    .modal {
+        width: 408px;
+        height: 584px;
+    }
    
 }
 
