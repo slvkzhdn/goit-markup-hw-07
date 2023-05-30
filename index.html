@@ -461,13 +461,13 @@
 <!-- Mobile menu -->
 
 <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-      <svg
+    <button class="mobile-menu-close-btn js-close-menu">
+      <svg class="mobile-menu-close-icon"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="8"
+        height="8"
       >
         <path
           fill-rule="evenodd"
@@ -477,47 +477,58 @@
       </svg>
     </button>
 
-    <ul class="mobile-menu">
-      <li><a href="./index.html" class="link">Studio</a></li>
-      <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-      <li><a href="" class="link">Contacts</a></li>
-    </ul>
+    <div class="mobile-nav-list-wrapper">
+        <ul class="mobile-menu">
+          <li class="mobile-nav-item"><a href="./index.html" class="mobile-nav-link link">Studio</a></li>
+          <li class="mobile-nav-item"><a href="./portfolio.html" class="mobile-nav-link link">Portfolio</a></li>
+          <li class="mobile-nav-item"><a href="" class="mobile-nav-link link">Contacts</a></li>
+        </ul>
+    </div>
 
-    <ul class="mobile-contacts">
-        <li><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-      </ul>
+<div class="contacts-social-wrapper">
+      <address class="mobile-contacts">
+          <ul class="mobile-contacts-list list">
+            <li class="">
+                <a class="mobile-contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="">
+                <a class="mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+    </address>
 
     <ul class="mobile-socials">
         <li class="socials-list list">
-            <a href="" class="footer-socials-link link" target="_blank" rel="noopener noreferrer" aria-label="instagram icon">
+            <a href="" class="mobile-menu-social-list-link link" target="_blank" rel="noopener noreferrer" aria-label="instagram icon">
                 <svg class="footer-socials-icon" width="24" height="24">
                     <use href="./images/icons.svg#instagram"></use>
                 </svg>
             </a>
         </li>
         <li class="socials-list list">
-            <a href="" class="footer-socials-link link" target="_blank" rel="noopener noreferrer" aria-label="twitter icon">
+            <a href="" class="mobile-menu-social-list-link link" target="_blank" rel="noopener noreferrer" aria-label="twitter icon">
                 <svg class="footer-socials-icon" width="24" height="24">
                     <use href="./images/icons.svg#twitter"></use>
                 </svg>
             </a>
         </li>
         <li class="socials-list list">
-            <a href="" class="footer-socials-link link" target="_blank" rel="noopener noreferrer" aria-label="facebook icon">
+            <a href="" class="mobile-menu-social-list-link link" target="_blank" rel="noopener noreferrer" aria-label="facebook icon">
                 <svg class="footer-socials-icon" width="24" height="24">
                     <use href="./images/icons.svg#facebook"></use>
                 </svg>
             </a>
         </li>
         <li class="socials-list list">
-            <a href="" class="footer-socials-link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin icon">
+            <a href="" class="mobile-menu-social-list-link link" target="_blank" rel="noopener noreferrer" aria-label="linkedin icon">
                 <svg class="footer-socials-icon" width="24" height="24">
                     <use href="./images/icons.svg#linkedin"></use>
                 </svg>
             </a>
         </li>
       </ul>
+</div>
+
 
       
 

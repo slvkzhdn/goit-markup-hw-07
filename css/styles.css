@@ -1886,7 +1886,6 @@ opacity: 1;
     position: absolute;
     top: 16px;
     right: 16px;
-    /* color: black; */
   }
   
   .mobile-menu {
@@ -1898,15 +1897,10 @@ opacity: 1;
   .mobile-menu .link {
     display: block;
     padding: 10px;
-    /* color: #fff; */
     text-decoration: none;
   }
 
-  /* .mobile-socials {
-    justify-content: flex-start;
-    gap: 54px;
-  } */
-
+/* Mobile */
   @media only screen and (max-width: 767px) {
 
     .menu-toggle {
@@ -1918,5 +1912,108 @@ opacity: 1;
         min-width: 32px;
         min-height: 22px;
     }
+
+    .mobile-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    color: var(--brand-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .mobile-menu-close-icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* width: 8px;
+    height: 8px; */
+    }
+
+    .mobile-nav-list-wrapper {
+        margin-bottom: auto;
+    }
+
+    .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    }
+
+    .mobile-nav-link {
+    font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+    }
+
+    .mobile-menu-container {
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+
+    .mobile-contacts {
+        font-style: normal;
+    margin-bottom: 48px;
+    }
+
+    .mobile-contacts-list {
+        display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+
+    .mobile-contacts-link {
+        font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .mobile-contacts-tel {
+        font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4D5AE5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-socials {
+        display: flex;
+    gap: 56px;
+    padding: 0;
+    }
+
+    .mobile-menu-social-list-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        color: #f4f4fd;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    
     
   }
